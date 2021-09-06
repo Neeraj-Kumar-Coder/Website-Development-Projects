@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers World: Home</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="/images/logo.png" alt="logo">
+            <div class="name">HACKERS WORLD</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn" id="contact">Contact Us</button>
+            <button class="btn" id="login">Sign up/Log in</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="backend.php">
+            <div class="form-group" id="caption">
+                <span id="cptn">JOIN THE WORLD OF PROGRAMMING</span>
+                <hr>
+            </div>
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age: </label>
+                <input type="text" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <span>Gender: </span>
+                <label for="male">Male</label>
+                <input type="radio" name="myGender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="myGender" id="female">
+                <label for="other">Other</label>
+                <input type="radio" name="myGender" id="other">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email: </label>
+                <input type="email" id="Email" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <label for="mobile number">Mobile number: </label>
+                <input type="text" id="mobile number" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="checkbox" >Let's Enter A New World</label>
+                <input type="checkbox" id="checkbox" checked>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Now" class="btn">
+                <input type="reset" value="Reset" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

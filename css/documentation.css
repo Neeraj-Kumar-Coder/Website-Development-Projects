@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+* {
+    font-family: 'Fira Code', monospace;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url('/images/documentation.jpg');
+    background-color: black;
+    height: 100%;
+    background-size: 70%;
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+}
+
+.left {
+    /* border: 2px solid white; */
+    color: white;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+
+.mid {
+    /* border: 3px solid white; */
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.right {
+    /* border: 2px solid white; */
+    color: white;
+    display: inline-block;
+    position: absolute;
+    width: 135px;
+    right: 20px;
+    top: 50px;
+}
+
+.left img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    filter: invert(100%);
+}
+
+.left .name {
+    margin: 11px auto;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 40px;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+.navbar li a:active {
+    color: rgb(97, 97, 97);
+}
+
+.active {
+    border: 3px solid white;
+    padding: 5px 24px;
+    border-radius: 50px;
+    color: rgb(255 255 255);
+}
+
+.btn {
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.btn:active {
+    background-color: grey;
+}
+
+#contact {
+    margin: 3px 20px;
+}
+
+#login {
+    margin: 3px 4px;
+}
