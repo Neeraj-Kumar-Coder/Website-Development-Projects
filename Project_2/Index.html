@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 732px" href="/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logodiv">
+            <a href="#"><img src="/images/logo.png" alt="logo"></a>
+            <span>Tagline Here</span>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#offerhead">Services</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#contactus">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="btndiv">
+            <button class="btn">Login / SignUp</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="maindiv">
+            <h1>WELCOME TO YOUR COMPANY NAME</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolorem vitae
+                pariatur quisquam
+                quod commodi nisi dolore est sit ratione officia eaque, obcaecati earum, optio a perspiciatis! Eos,
+                dolores. Dolorum ad placeat doloribus, inventore consectetur a repellendus laudantium explicabo
+                voluptatum et hic doloremque consequatur adipisci sunt. Ea aspernatur commodi eligendi!</p>
+            <button>Enroll Now</button>
+        </div>
+    </section>
+
+    <section>
+        <h1 id="offerhead">Our Offerings</h1>
+        <div class="offerings">
+            <div class="offer" id="basic">
+                <h2>BASIC</h2>
+                <ul>
+                    <li class="check">&check; Basic Tools</li>
+                    <li class="check">&check; Parental Control</li>
+                    <li class="check">&check; Theft Protection</li>
+                    <li class="check">&check; Customer Suppor</li>
+                    <li class="cross">&cross; Online Security</li>
+                    <li class="cross">&cross; Advanced Detection</li>
+                    <li class="cross">&cross; Root-kit Checker</li>
+                    <li class="cross">&cross; Extended Customer Support</li>
+                    <li class="cross">&cross; Upto 5 users</li>
+                </ul>
+                <span>Only &dollar;399/year</span>
+                <button id="bscbtn">Buy Now</button>
+            </div>
+            <div class="offer" id="advanced">
+                <h2>ADVANCED</h2>
+                <ul>
+                    <li class="check">&check; Basic Tools</li>
+                    <li class="check">&check; Parental Control</li>
+                    <li class="check">&check; Theft Protection</li>
+                    <li class="check">&check; Customer Suppor</li>
+                    <li class="check">&check; Online Security</li>
+                    <li class="check">&check; Advanced Detection</li>
+                    <li class="cross">&cross; Root-kit Checker</li>
+                    <li class="cross">&cross; Extended Customer Support</li>
+                    <li class="cross">&cross; Upto 5 users</li>
+                </ul>
+                <span>Only &dollar;999/year</span>
+                <button id="advbtn">Buy Now</button>
+            </div>
+            <div class="offer" id="premium">
+                <h2>PREMIUM</h2>
+                <ul>
+                    <li class="check">&check; Basic Tools</li>
+                    <li class="check">&check; Parental Control</li>
+                    <li class="check">&check; Theft Protection</li>
+                    <li class="check">&check; Customer Suppor</li>
+                    <li class="check">&check; Online Security</li>
+                    <li class="check">&check; Advanced Detection</li>
+                    <li class="check">&check; Root-kit Checker</li>
+                    <li class="check">&check; Extended Customer Support</li>
+                    <li class="check">&check; Upto 5 users</li>
+                </ul>
+                <span>Only &dollar;1299/year</span>
+                <button id="prembtn">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="aboutus">
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure incidunt ab consequuntur, molestias minima
+                maxime sunt aut dolore ipsum nulla vel cupiditate veritatis id facere. Libero nemo reprehenderit
+                incidunt dolorum eaque fuga ipsam dolores repellat, quo, beatae expedita non numquam quos, aspernatur
+                eveniet in natus assumenda illo quisquam sed? Minus dolore facere iure hic accusamus. Sequi odit nobis
+                facere at a quisquam eveniet, esse explicabo ratione excepturi optio architecto. Exercitationem modi,
+                laboriosam eaque error dolorem voluptas eum, magni maxime repellendus, expedita iure impedit animi alias
+                qui aliquid. Tempora officiis, cupiditate, minima consectetur soluta voluptate maiores, iusto omnis quos
+                fuga unde?</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="contactus">
+            <h1>Contact us</h1>
+            <span>&hearts; We would love to hear from you &hearts;</span>
+            <form action="#" id="frm">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Enter you name">
+                <label for="age"></label>
+                <input type="number" name="age" id="age" placeholder="Enter your age">
+                <div class="gnrdiv">
+                    <label for="gndrM">
+                        Male <input type="radio" name="gndr" id="gndrM">
+                    </label>
+                    <label for="gndrF">
+                        Female <input type="radio" name="gndr" id="gndrF">
+                    </label>
+                    <label for="gndrO">
+                        Other <input type="radio" name="gndr" id="gndrO">
+                    </label>
+                </div>
+                <label for="mobile"></label>
+                <input type="tel" name="mobile" id="mobile" placeholder="Enter you mobile">
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+                <label for="txtarea"></label>
+                <textarea name="txtarea" id="txtarea" cols="50" rows="10"
+                    placeholder="Write something about you"></textarea>
+                <div id="act">
+                    <button type="submit" class="btn">Submit Now</button>
+                    <button type="reset" class="btn">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        copyright&copy; www.yourwebsite.com - All rights reserved.
+    </footer>
+</body>
+
+</html>

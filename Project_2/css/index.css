@@ -1,0 +1,413 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@300&display=swap');
+/* CSS reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* Media Queries */
+
+@media (max-width:1100px)
+{
+    .offerings{
+        flex-wrap: wrap;
+    }
+    .offer{
+        margin: 5px;
+    }
+}
+
+/* Header css */
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Logo and Tagline */
+
+.logodiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.logodiv img {
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    filter: invert(100%);
+}
+
+.logodiv span {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    font-size: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    padding: 15px;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 20px 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+/* SignUp and Login button */
+
+.btndiv {
+    display: flex;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.btn:active {
+    background-color: rgb(210, 210, 210);
+}
+
+/* Main div Styling */
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.maindiv h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 30px 5px;
+    text-align: center;
+}
+
+.maindiv p {
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    font-size: 20px;
+    margin: 5px 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.maindiv button {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    margin: 15px 5px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    box-shadow: inset 0px 0px 10px 3px grey;
+}
+
+.maindiv button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    box-shadow: inset 0px 0px 15px 3px white;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+.maindiv button:active {
+    background-color: black;
+    box-shadow: inset 0px 0px 10px 5px white;
+}
+
+/* Offerings Styling */
+
+.offerings {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#offerhead {
+    background-color: rgba(218, 165, 32, 0.253);
+    color: rgb(182, 155, 0);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 20px 5px;
+}
+
+.offer {
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.offer:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+#basic {
+    background-image: url('/images/basicBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#advanced {
+    background-image: url('/images/advancedBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#premium {
+    background-image: url('/images/premiumBG.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.offer h2 {
+    margin: 5px 0px;
+    font-size: 40px;
+    color: yellow;
+    text-shadow: 0px 0px 10px orangered;
+}
+
+.offer span {
+    margin: 7px;
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    text-shadow: 0px 0px 20px rgb(28, 253, 28);
+    text-align: center;
+}
+
+.offer ul {
+    margin: 30px;
+}
+
+.offer ul li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.offer ul .check {
+    color: green;
+    text-shadow: 0px 0px 3px lightgreen;
+}
+
+.offer ul .cross {
+    color: red;
+    text-shadow: 0px 0px 3px orangered;
+}
+
+.offer button {
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: 15px 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#bscbtn {
+    border: 1px solid burlywood;
+}
+
+#advbtn {
+    border: 1px solid silver;
+}
+
+#prembtn {
+    border: 1px solid gold;
+}
+
+#bscbtn:hover {
+    background-color: burlywood;
+    box-shadow: inset 0px 0px 10px rgb(160, 129, 129);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#advbtn:hover {
+    background-color: silver;
+    box-shadow: inset 0px 0px 10px white;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#prembtn:hover {
+    background-color: rgb(255, 239, 146);
+    box-shadow: inset 0px 0px 10px goldenrod;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+/* About us Styling */
+
+#aboutus {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#aboutus h1 {
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+#aboutus p {
+    text-align: center;
+    font-family: 'IBM Plex Sans Hebrew', sans-serif;
+    margin: 10px;
+    padding: 10px 50px;
+    font-size: 25px;
+}
+
+/* Contact us styling */
+
+#contactus {
+    background-color: orange;
+    padding: 20px;
+    background-image: url('/images/contact\ us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#contactus h1 {
+    font-size: 40px;
+    margin: 5px;
+    padding: 3px;
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#contactus span {
+    color: rgb(255, 97, 124);
+    text-shadow: 0px 0px 3px lightgreen;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin: 5px;
+    text-align: center;
+    padding: 3px;
+}
+
+#contactus form input, textarea, .gnrdiv {
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+#frm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+#frm .gnrdiv label {
+    color: white;
+    font-size: 25px;
+}
+
+#act {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer styling */
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+}
