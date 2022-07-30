@@ -13,6 +13,14 @@ nav .navbar {
     flex-wrap: wrap;
 }
 
+nav .navbar ul li {
+    margin: 0px 10px;
+}
+
+nav .navbar ul li a {
+    font-size: 17px;
+}
+
 .skill {
     flex-direction: column;
     max-width: 80vw;
